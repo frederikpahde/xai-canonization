@@ -1,0 +1,16 @@
+annotation_path: /mnt/MS_data/annotations/instances_val2014.json
+batch_size: 32
+classes:
+- 0
+dataset_name: MS
+dataset_path: /mnt/MS_data/val2014
+device: cuda
+input_size: 224
+mask_type: segm
+model_name: densenet_121
+model_path: /mnt/checkpoints/MS/densenet_121/MS_densenet_121
+num_batches_to_process: 300
+num_batches_to_process_pixel_flipping: 50
+save_dir: /mnt/outputs/
+seed: 1
+xai_method: lrp_ep_densenet_canonized_untangled

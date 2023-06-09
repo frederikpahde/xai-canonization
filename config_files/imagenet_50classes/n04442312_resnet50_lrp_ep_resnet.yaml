@@ -1,0 +1,15 @@
+annotation_path: <IMAGENET_ANNOTATION_PATH>
+batch_size: 32
+dataset_name: imagenet
+dataset_path: <IMAGENET_IMAGE_PATH>
+device: cuda
+input_size: 224
+label_map_path: other_files/label-map-imagenet.json
+model_name: resnet50
+num_batches_to_process: 20
+num_batches_to_process_pixel_flipping: 10
+save_dir: test_outputs/
+seed: 1
+word_net_ids:
+- n04442312
+xai_method: lrp_ep_resnet

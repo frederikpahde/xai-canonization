@@ -1,0 +1,35 @@
+Bootstrap: docker
+From: pytorch/pytorch:1.12.1-cuda11.3-cudnn8-runtime
+
+%files
+
+  ../quantus_evaluation /opt/quantus_evaluation
+
+%post
+
+  apt-get update
+  apt-get install --yes build-essential 
+  pip install \
+    numpy \
+    matplotlib \
+    xmltodict \
+    pillow \
+    pyyaml \
+    pandas \
+    tqdm \
+    tensorflow==2 \
+    scikit-learn \
+    scikit-image \
+    scipy \
+    seaborn \
+    termcolor \
+
+  pip install pycocotools
+  pip install opencv-python-headless
+  pip install zennit efficientnet_pytorch captum timm
+
+%runscript
+
+  pip freeze >>/mnt/output/requirements.txt
+
+

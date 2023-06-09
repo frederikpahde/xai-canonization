@@ -1,0 +1,14 @@
+VOC_type: bbox
+batch_size: 32
+dataset_name: VOC
+dataset_path: /mnt/dataset/
+device: cuda
+input_size: 224
+mask_type: segm
+model_name: densenet_161
+model_path: /mnt/checkpoints/VOC/densenet_161/VOC_densenet_161
+num_batches_to_process: 300
+num_batches_to_process_pixel_flipping: 50
+save_dir: /mnt/outputs/
+seed: 1
+xai_method: guided_backprop

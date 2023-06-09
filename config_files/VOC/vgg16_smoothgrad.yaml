@@ -1,0 +1,14 @@
+VOC_type: bbox
+batch_size: 32
+dataset_name: VOC
+dataset_path: /mnt/dataset/
+device: cuda
+input_size: 224
+mask_type: segm
+model_name: vgg16
+model_path: /mnt/checkpoints/VOC/vgg16/VOC_vgg16
+num_batches_to_process: 300
+num_batches_to_process_pixel_flipping: 50
+save_dir: /mnt/outputs/
+seed: 1
+xai_method: smoothgrad

@@ -1,0 +1,32 @@
+annotation_path: <IMAGENET_ANNOTATION_PATH>
+batch_size: 32
+canonized: 0
+dataset_path: <IMAGENET_IMAGE_PATH>
+device: cuda
+feat_gammas:
+- 0
+- 0.1
+- 0.25
+- 0.5
+- 1
+- 10
+- 50
+high_gammas:
+- 0
+- 0.1
+- 0.25
+- 0.5
+- 1
+- 10
+- 50
+img_size: 224
+label_map_path: other_files/label-map-imagenet.json
+low_gammas:
+- 0.1
+mid_gammas:
+- 0.25
+num_batches_to_process: 20
+num_batches_to_process_pixel_flipping: 10
+save_dir: test_outputs/
+word_net_ids:
+- n02097474

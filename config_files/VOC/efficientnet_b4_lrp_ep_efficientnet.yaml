@@ -1,0 +1,13 @@
+batch_size: 32
+dataset_name: VOC
+dataset_path: <VOC_DATA_PATH>
+device: cuda
+input_size: 224
+mask_type: segm
+model_name: efficientnet_b4
+model_path: <MODEL_PATH>
+num_batches_to_process: 20
+num_batches_to_process_pixel_flipping: 10
+save_dir: test_outputs/
+seed: 1
+xai_method: lrp_ep_efficientnet

@@ -1,0 +1,16 @@
+annotation_path: /mnt/MS_data/annotations/instances_val2014.json
+batch_size: 32
+classes:
+- 37
+dataset_name: MS
+dataset_path: /mnt/MS_data/val2014
+device: cuda
+input_size: 224
+mask_type: segm
+model_name: densenet_161
+model_path: /mnt/checkpoints/MS/densenet_161/MS_densenet_161
+num_batches_to_process: 300
+num_batches_to_process_pixel_flipping: 50
+save_dir: /mnt/outputs/
+seed: 1
+xai_method: guided_backprop_densenet_canonized_seq_thresh

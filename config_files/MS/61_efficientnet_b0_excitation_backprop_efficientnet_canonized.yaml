@@ -1,0 +1,16 @@
+annotation_path: /mnt/MS_data/annotations/instances_val2014.json
+batch_size: 32
+classes:
+- 61
+dataset_name: MS
+dataset_path: /mnt/MS_data/val2014
+device: cuda
+input_size: 224
+mask_type: segm
+model_name: efficientnet_b0
+model_path: /mnt/checkpoints/MS/efficientnet_b0/MS_efficientnet_b0
+num_batches_to_process: 300
+num_batches_to_process_pixel_flipping: 50
+save_dir: /mnt/outputs/
+seed: 1
+xai_method: excitation_backprop_efficientnet_canonized
